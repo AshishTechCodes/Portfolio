@@ -7,6 +7,14 @@ const Form_orignal = () => {
     const [stateName,setStateName]=useState("");
     const [zip,setZip]=useState("");
     const [formData, setFormData]=useState({})
+    const [error, setError]=useState({
+      name:'',
+      lname:'',
+      password:'',
+      city:'',
+      state:'',
+      zip:''
+    });
     const handleSubmit=(e)=>{
         e.preventDefault();
         const formData={
@@ -30,18 +38,41 @@ const Form_orignal = () => {
       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
         First Name
       </label>
-      <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane" onChange={(e)=>{
+      <input className={`appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white ${error.name?'border-red-500':''}`} id="grid-first-name" type="text" placeholder="Jane" onChange={(e)=>{
         setName(e.target.value);
+        if (e.target.value.length<=3){
+          setError((...prev)=>({
+            ...prev,
+            name:'The Name Should be more than 3 character.'
+          }))
+        }else{
+          setError((...prev)=>({
+            ...prev,
+            name:''
+          }))
+        }
       }}/>
-      <p className="text-red-500 text-xs italic">Please fill out this field.</p>
+      <p className='text-red-600'>{error.name}</p>
     </div>
     <div className="w-full md:w-1/2 px-3">
       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-last-name">
         Last Name
       </label>
-      <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" onChange={(e)=>{
+      <input className={`appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'${error.lname?'border-red-500':''}`} id="grid-last-name" type="text" placeholder="Doe" onChange={(e)=>{
         setLname(e.target.value);
+        if (e.target.value.length<=3){
+          setError((...prev)=>({
+            ...prev,
+            lname:'The Last Name Should be more than 3 character.'
+          }))
+        }else{
+          setError((...prev)=>({
+            ...prev,
+            lname:''
+          }))
+        }
       }}/>
+     <p className='text-red-600'>{error.lname}</p>
     </div>
   </div>
   <div className="flex flex-wrap -mx-3 mb-6">
@@ -49,10 +80,21 @@ const Form_orignal = () => {
       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-password">
         Password
       </label>
-      <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************" onChange={(e)=>{
+      <input className={`appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white ${error.password?'border-red-500':''}`} id="grid-password" type="password" placeholder="******************" onChange={(e)=>{
         setPassword(e.target.value);
+        if (e.target.value.length<=8){
+          setError((...prev)=>({
+            ...prev,
+            password:'The Last Name Should be more than 8 character.'
+          }))
+        }else{
+          setError((...prev)=>({
+            ...prev,
+            password:''
+          }))
+        }
       }} />
-      <p className="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
+       <p className='text-red-600'>{error.password}</p>
     </div>
   </div>
   <div className="flex flex-wrap -mx-3 mb-2">
@@ -60,7 +102,7 @@ const Form_orignal = () => {
       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-city">
         City
       </label>
-      <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Albuquerque" onChange={(e)=>setCity(e.target.value)} />
+      <input className={`appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 ${error.city?'border-red-500':''}`} id="grid-city" type="text" placeholder="Albuquerque" onChange={(e)=>setCity(e.target.value)}/>
     </div>
     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-state">
@@ -83,9 +125,21 @@ const Form_orignal = () => {
       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-zip">
         Zip
       </label>
-      <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="number" placeholder="90210" onChange={(e)=>{
+      <input className={`appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500${error.zip?"border-red-500":""}`} id="grid-zip" type="number" placeholder="90210" onChange={(e)=>{
         setZip(e.target.value);
+        if (e.target.value.length<=4){
+          setError((...prev)=>({
+            ...prev,
+            zip:'The Last Name Should be more than 4 character.'
+          }))
+        }else{
+          setError((...prev)=>({
+            ...prev,
+            zip:''
+          }))
+        }
       }} />
+      <p className='text-red-500'>{error.zip}</p>
     </div>
   </div>
   <button onClick={handleSubmit} className='bg-violet-700 text-white rounded-md'>Submit</button>
