@@ -102,7 +102,21 @@ const Form_orignal = () => {
       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-city">
         City
       </label>
-      <input className={`appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 ${error.city?'border-red-500':''}`} id="grid-city" type="text" placeholder="Albuquerque" onChange={(e)=>setCity(e.target.value)}/>
+      <input className={`appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 ${error.city?'border-red-500':''}`} id="grid-city" type="text" placeholder="Albuquerque" onChange={(e)=>{
+        setCity(e.target.value)
+        if(e.target.value.length <= 2){
+          setError((...prev)=>({
+            ...prev,
+            city:'The Last Name Should be more than 3 character.'
+          }))
+        }else{
+          setError((...prev)=>({
+            ...prev,
+            city:''
+          }))
+        }
+        }}/>
+      <p className='text-red-600'>{error.city}</p>
     </div>
     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-state">
