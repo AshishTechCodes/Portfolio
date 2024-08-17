@@ -1,0 +1,34 @@
+//npm install react-hook-form (apply it for useForm)
+
+Generic props:
+
+Option	Description
+mode:
+        	Validation strategy before submitting behaviour.
+reValidateMode:
+        	Validation strategy after submitting behaviour.
+defaultValues:
+        	Default values for the form.
+values:
+        	Reactive values to update the form values.
+errors:
+        	Reactive errors to update the form errors.
+resetOptions:
+        	Option to reset form state update while updating new form values.
+criteriaMode:
+        	Display all validation errors or one at a time.
+shouldFocusError:
+        	Enable or disable built-in focus management.
+delayError:
+        	Delay error from appearing instantly.
+shouldUseNativeValidation:
+        	Use browser built-in form constraint API.
+shouldUnregister:
+        	Enable and disable input unregister after unmount.
+
+
+Schema validation props:
+
+Option	Description
+resolver	Integrates with your preferred schema validation library.
+context	A context object to supply for your schema validation.
