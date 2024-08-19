@@ -7,6 +7,8 @@ import From from './Components/Form/From';
 import Form_orignal from './Components/Form/Form_orignal';
 import Register from './Components/useForm/Register';
 import Unregister from './Components/useForm/Unregister';
+import FormState from './Components/useForm/FormState';
+import Multiple_error from './Components/useForm/Multiple_error';
 const App = () => {
   var count = 10;
   return (
@@ -32,6 +34,10 @@ const App = () => {
       {/* <Register/> */}
       <br/>
       <Unregister/>
+      <br/>
+      <FormState/>
+      <br/>
+      <Multiple_error/>
       {/* </fieldset> */}
      <br/><br/>
       </center>

@@ -1,5 +1,6 @@
 //npm install react-hook-form (apply it for useForm)
 
+// For Error Message npm install @hookform/error-message
 Generic props:
 
 Option	Description
