@@ -9,10 +9,11 @@ const Multiple_error = () => {
       });
       const onSubmit = (data) => console.log(data);
   return (
-
+    <fieldset className='border-violet-700 border-4'>
+    <legend>Multiple Error</legend>
     <form onSubmit={handleSubmit(onSubmit)}>
       <h1>ErrorMessage</h1>
-      <input className='bg-violet-600 text-white'
+      <input className='h-fit w-auto border-black bg-violet-600 text-white font-bold text-xl'
         {...register("multipleErrorInput", {
           required: "This input is required.",
           pattern: {
@@ -37,10 +38,12 @@ const Multiple_error = () => {
             : null;
         }}
       />
-
-      <input type="submit" className='bg-blue-700 text-white ml-2'/>
+      <br/><br/>
+      <input type="submit" className='bg-blue-800 text-white border-blue-300 border-2 rounded'/>
+      <br/>
     </form>
-  );
+    </fieldset>
+  )
 }
 
 export default Multiple_error

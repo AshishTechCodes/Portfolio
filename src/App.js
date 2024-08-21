@@ -5,10 +5,12 @@ import './App.css'
 import Increment from './Components/useState/Increment';
 import From from './Components/Form/From';
 import Form_orignal from './Components/Form/Form_orignal';
-import Register from './Components/useForm/Register';
-import Unregister from './Components/useForm/Unregister';
-import FormState from './Components/useForm/FormState';
+import Register_1 from './Components/useForm/Register_1';
+import Unregister_2 from './Components/useForm/Unregister_2';
+import FormState_3 from './Components/useForm/FormState_3';
 import Multiple_error from './Components/useForm/Multiple_error';
+import Timer from './Components/useEffect/Timer';
+import Watch from './Components/useForm/Watch';
 const App = () => {
   var count = 10;
   return (
@@ -22,23 +24,27 @@ const App = () => {
       <Card/>
       <br/><br/>
       <Effect/>
-      <br/><br/>
+      <br/><br/> */}
+      {/* <Timer/> */}
+      {/* <br/><br/>
       <Increment/>
       <br/><br/>
       <From/>
+      <br/><br/>
+      <Form_orignal/>
       <br/><br/> */}
-      {/* <Form_orignal/>
-      <br/><br/> */}
-      {/* <fieldset className='border-violet-700 border-4'>
-        <legend>useForm</legend> */}
-      {/* <Register/> */}
+      <fieldset className='border-violet-700 border-4'>
+        <legend>useForm</legend>
+      <Register_1/>
       <br/>
-      <Unregister/>
+      <Unregister_2/>
       <br/>
-      <FormState/>
+      <FormState_3/>
       <br/>
-      <Multiple_error/>
-      {/* </fieldset> */}
+      {/* <Multiple_error/>
+      <br/> */}
+      <Watch/>
+      </fieldset>
      <br/><br/>
       </center>
     </div>

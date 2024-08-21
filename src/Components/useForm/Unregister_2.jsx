@@ -9,12 +9,17 @@ const Unregister = () => {
     };
   return (
     <fieldset className='border-violet-700 border-4'>
+      <legend>UnRegister</legend>
+      <br/>
     <form onSubmit={handleSubmit(onSubmit)}>
-      <label>Last Name</label>
-      <input className='h-10 ' {...register("firstName")} />
-      <label>First Name</label>
-      <input {...register("lastName")} />
-      <button
+      <label>First Name: </label>
+      <input className='h-fit w-auto border-black bg-violet-600 text-white font-bold text-xl' {...register("firstName")} />
+      <br/>
+      <br/>
+      <label>Last Name: </label>
+      <input className='h-fit w-auto border-black bg-violet-600 text-white font-bold text-xl' {...register("lastName")} />
+      <br/><br/>
+      <button className='bg-blue-800 text-white border-blue-300 border-2 rounded'
         type="button"
         onClick={() => {
           unregister("lastName");
@@ -23,7 +28,8 @@ const Unregister = () => {
       >
         unregister lastName
       </button>
-      <input type="submit" />
+        <br/><br/>
+      <input type="submit" className='bg-blue-800 text-white border-blue-300 border-2 rounded'/>
     </form>
     </fieldset>
   )
