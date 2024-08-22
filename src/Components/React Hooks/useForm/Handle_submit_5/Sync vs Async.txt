@@ -1,0 +1,3 @@
+Sync => To accept and Run only one request at a time.
+
+Async => To accept and Run Multiple Request at a time.

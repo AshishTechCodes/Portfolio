@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-const Watch = () => {
+const Watch_4 = () => {
   const {
     register,
     watch,
@@ -34,4 +34,4 @@ const Watch = () => {
   );
 };
 
-export default Watch;
+export default Watch_4;
