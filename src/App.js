@@ -13,6 +13,8 @@ import Timer from './Components/React Hooks/useEffect/Timer';
 import Watch_4 from './Components/React Hooks/useForm/Watch_4';
 import Handle_submit_Sync from './Components/React Hooks/useForm/Handle_submit_5/Handle_submit_Sync';
 import Handle_submit_Async from './Components/React Hooks/useForm/Handle_submit_5/Handle_submit_Async';
+import Uncontrolled_Component from './Components/React Hooks/useForm/Reset_6 (Uncontrolled_Controlled)/Uncontrolled_Component';
+import Controlled_Component from './Components/React Hooks/useForm/Reset_6 (Uncontrolled_Controlled)/Controlled_Component';
 const App = () => {
   var count = 10;
   return (
@@ -50,6 +52,10 @@ const App = () => {
       <Handle_submit_Sync/>
       <br/>
       <Handle_submit_Async/>
+      <br/>
+      <Uncontrolled_Component/>
+      <br/>
+      <Controlled_Component/>
       </fieldset>
      <br/><br/>
       </center>
