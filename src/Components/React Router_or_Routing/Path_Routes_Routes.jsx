@@ -7,5 +7,4 @@ const Path_Routes_Routes = () => {
     <div>Path_Routes_Routes</div>
   )
 }
-
 export default Path_Routes_Routes

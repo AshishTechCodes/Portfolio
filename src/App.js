@@ -15,6 +15,7 @@ import Handle_submit_Sync from './Components/React Hooks/useForm/Handle_submit_5
 import Handle_submit_Async from './Components/React Hooks/useForm/Handle_submit_5/Handle_submit_Async';
 import Uncontrolled_Component from './Components/React Hooks/useForm/Reset_6 (Uncontrolled_Controlled)/Uncontrolled_Component';
 import Controlled_Component from './Components/React Hooks/useForm/Reset_6 (Uncontrolled_Controlled)/Controlled_Component';
+import UseMemo1 from './Components/React Hooks/useMemo/UseMemo1';
 const App = () => {
   var count = 10;
   return (
@@ -37,7 +38,7 @@ const App = () => {
       <br/><br/>
       <Form_orignal/>
       <br/><br/> */}
-      <fieldset className='border-violet-700 border-4'>
+      {/* <fieldset className='border-violet-700 border-4'>
         <legend>useForm</legend>
       <Register_1/>
       <br/>
@@ -45,8 +46,8 @@ const App = () => {
       <br/>
       <FormState_3/>
       <br/>
-      {/* <Multiple_error/>
-      <br/> */}
+      <Multiple_error/>
+      <br/>
       <Watch_4/>
       <br/>
       <Handle_submit_Sync/>
@@ -57,7 +58,11 @@ const App = () => {
       <br/>
       <Controlled_Component/>
       </fieldset>
-     <br/><br/>
+     <br/><br/> */}
+     <fieldset className='border-violet-700 border-4'>
+      <legend>useMemo</legend>
+      <UseMemo1/>
+     </fieldset>
       </center>
     </div>
   )
