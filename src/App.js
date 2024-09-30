@@ -17,6 +17,15 @@ import Uncontrolled_Component from './Components/React Hooks/useForm/Reset_6 (Un
 import Controlled_Component from './Components/React Hooks/useForm/Reset_6 (Uncontrolled_Controlled)/Controlled_Component';
 import UseMemo1 from './Components/React Hooks/useMemo/UseMemo1';
 import Component1 from './Components/React Hooks/useContext/Component1';
+import Component3 from './Components/React Hooks/useContext/Component3';
+import Class from './Components/ES6/Classes/Class';
+import Array1 from './Components/ES6/Array Method/Array1';
+import Destructuring from './Components/ES6/Destructuring/Destructuring';
+import UseRef from './Components/React Hooks/useRef/UseRef';
+import UseRef1 from './Components/React Hooks/useRef/UseRef1';
+import UseRef2 from './Components/React Hooks/useRef/UseRef2';
+import UseRef3 from './Components/React Hooks/useRef/UseRef3';
+import UseRef4 from './Components/React Hooks/useRef/UseRef4';
 const App = () => {
   var count = 10;
   return (
@@ -64,13 +73,31 @@ const App = () => {
       <legend>useMemo</legend>
       <UseMemo1/>
      </fieldset> */}
-     <fieldset className='border-violet-700 border-4'>
+     {/* <fieldset className='border-violet-700 border-4'>
      <legend>useContext</legend>
      <fieldset className='border-violet-700 border-4'>
+      <h1><b><u>If we define Component 1</u></b></h1>
       <Component1/>
+      <br/>
+      <h1><b><u>If we define Component 3</u></b></h1>
+      <Component3/>
       </fieldset>
+     </fieldset> */}
+     {/* <Class/>
+     <Array1/>
+     <Destructuring/> */}
+     <fieldset className='border-violet-700 border-4'>
+     <UseRef/>
+     <br/>
+     <UseRef1/> 
+     <br/>
+     <UseRef2/>
+     <br/>
+     <UseRef3/>
+     <br/>
+     <UseRef4/>
      </fieldset>
-      </center>
+    </center>
     </div>
   )
 }
