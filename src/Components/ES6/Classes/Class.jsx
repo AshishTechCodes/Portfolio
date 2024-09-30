@@ -24,7 +24,9 @@ const Class = () => {
       const mycar = new Model("Ford", "Mustang");
     //   document.write(mycar.show());
   return (
+    <fieldset className='border-violet-700 border-4'>
     <div>{mycar.show()}</div>
+    </fieldset>
   )
 }
 

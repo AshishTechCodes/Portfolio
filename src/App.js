@@ -26,6 +26,8 @@ import UseRef1 from './Components/React Hooks/useRef/UseRef1';
 import UseRef2 from './Components/React Hooks/useRef/UseRef2';
 import UseRef3 from './Components/React Hooks/useRef/UseRef3';
 import UseRef4 from './Components/React Hooks/useRef/UseRef4';
+import Destructuring_1 from './Components/ES6/Destructuring/Destructuring_1';
+import Destructuring_2 from './Components/ES6/Destructuring/Destructuring_2';
 const App = () => {
   var count = 10;
   return (
@@ -83,10 +85,7 @@ const App = () => {
       <Component3/>
       </fieldset>
      </fieldset> */}
-     {/* <Class/>
-     <Array1/>
-     <Destructuring/> */}
-     <fieldset className='border-violet-700 border-4'>
+     {/* <fieldset className='border-violet-700 border-4'>
      <UseRef/>
      <br/>
      <UseRef1/> 
@@ -96,6 +95,14 @@ const App = () => {
      <UseRef3/>
      <br/>
      <UseRef4/>
+     </fieldset> */}
+     <fieldset className='border-violet-700 border-4'>
+      <legend>ES6</legend>
+     <Class/>
+     <Array1/>
+     <Destructuring/>
+     <Destructuring_1/>
+     <Destructuring_2/>
      </fieldset>
     </center>
     </div>

@@ -7,7 +7,9 @@ const myArray = ['apple', 'banana', 'orange'];
 const myList = myArray.map((item) => <p>{item}</p>)
 
   return (
+    <fieldset className='border-violet-700 border-4'>
     <div>{myList}</div>
+    </fieldset>
   )
 }
 
