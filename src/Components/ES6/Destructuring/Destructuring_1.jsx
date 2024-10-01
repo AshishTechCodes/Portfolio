@@ -16,7 +16,9 @@ const Destructuring_1 = () => {
     }, []);
 
     return (
+        <fieldset className='border-violet-700 border-4'>
         <div id='detail'>Details:</div>
+        </fieldset>
     );
 };
 
