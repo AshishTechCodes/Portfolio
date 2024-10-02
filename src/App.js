@@ -28,7 +28,8 @@ import UseRef3 from './Components/React Hooks/useRef/UseRef3';
 import UseRef4 from './Components/React Hooks/useRef/UseRef4';
 import Destructuring_1 from './Components/ES6/Destructuring/Destructuring_1';
 import Destructuring_2 from './Components/ES6/Destructuring/Destructuring_2';
-import useReducer1 from './Components/React Hooks/useReducer/useReducer1';
+import UseReducer1 from './Components/React Hooks/useReducer/UseReducer1';
+import UseReducer2 from './Components/React Hooks/useReducer/UseReducer2';
 const App = () => {
   var count = 10;
   return (
@@ -107,7 +108,8 @@ const App = () => {
      </fieldset> */}
      <fieldset className='border-violet-700 border-4'>
       <legend>useReducer</legend>
-      <useReducer1/>
+      <UseReducer1/>
+      <UseReducer2/>
      </fieldset>
     </center>
     </div>
