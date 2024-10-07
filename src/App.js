@@ -30,6 +30,8 @@ import Destructuring_1 from './Components/ES6/Destructuring/Destructuring_1';
 import Destructuring_2 from './Components/ES6/Destructuring/Destructuring_2';
 import UseReducer1 from './Components/React Hooks/useReducer/UseReducer1';
 import UseReducer2 from './Components/React Hooks/useReducer/UseReducer2';
+import UseReducer_increment from './Components/React Hooks/useReducer/UseReducer_increment';
+import UseCallback from './Components/React Hooks/useCallback/UseCallback';
 const App = () => {
   var count = 10;
   return (
@@ -106,11 +108,16 @@ const App = () => {
      <Destructuring_1/>
      <Destructuring_2/>
      </fieldset> */}
-     <fieldset className='border-violet-700 border-4'>
+     {/* <fieldset className='border-violet-700 border-4'>
       <legend>useReducer</legend>
       <UseReducer1/>
       <UseReducer2/>
-     </fieldset>
+      <UseReducer_increment/>
+     </fieldset> */}
+      <fieldset className='border-violet-700 border-4'>
+      <legend>useCallback</legend>
+      <UseCallback/>
+      </fieldset>
     </center>
     </div>
   )
