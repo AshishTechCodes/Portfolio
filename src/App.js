@@ -32,6 +32,8 @@ import UseReducer1 from './Components/React Hooks/useReducer/UseReducer1';
 import UseReducer2 from './Components/React Hooks/useReducer/UseReducer2';
 import UseReducer_increment from './Components/React Hooks/useReducer/UseReducer_increment';
 import UseCallback from './Components/React Hooks/useCallback/UseCallback';
+import Usememo2 from './Components/React Hooks/useMemo/Usememo2';
+import Use_of_Custom_hooks from './Components/React Hooks/Custom hooks/Use_of_Custom_hooks';
 const App = () => {
   var count = 10;
   return (
@@ -53,8 +55,8 @@ const App = () => {
       <From/>
       <br/><br/>
       <Form_orignal/>
-      <br/><br/>
-      <fieldset className='border-violet-700 border-4'>
+      <br/><br/> */}
+      {/* <fieldset className='border-violet-700 border-4'>
         <legend>useForm</legend>
       <Register_1/>
       <br/>
@@ -74,10 +76,11 @@ const App = () => {
       <br/>
       <Controlled_Component/>
       </fieldset>
-     <br/><br/>
-     <fieldset className='border-violet-700 border-4'>
+     <br/><br/> */}
+     {/* <fieldset className='border-violet-700 border-4'>
       <legend>useMemo</legend>
       <UseMemo1/>
+      <Usememo2/>
      </fieldset> */}
      {/* <fieldset className='border-violet-700 border-4'>
      <legend>useContext</legend>
@@ -114,9 +117,13 @@ const App = () => {
       <UseReducer2/>
       <UseReducer_increment/>
      </fieldset> */}
-      <fieldset className='border-violet-700 border-4'>
+      {/* <fieldset className='border-violet-700 border-4'>
       <legend>useCallback</legend>
       <UseCallback/>
+      </fieldset> */}
+      <fieldset className='border-violet-700 border-4'>
+        <legend>Custom Hooks</legend>
+        <Use_of_Custom_hooks/>
       </fieldset>
     </center>
     </div>

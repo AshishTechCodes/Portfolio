@@ -1,3 +1,8 @@
+// useMemo is a hook in React that helps optimize performance by memoizing the result of a computation. It only recalculates the value when one of its dependencies changes. This can be particularly useful for expensive calculations or rendering operations that don’t need to be recalculated on every render.
+
+// Basic Explanation
+// Purpose: To memoize a value so that it doesn't get recalculated on every render unless its dependencies change.
+// Usage: useMemo takes two arguments: a function that computes the value, and an array of dependencies. If the dependencies have not changed since the last render, useMemo returns the cached value.
 import React from 'react'
 import { useState,useMemo } from 'react';
 import ReactDOM from "react-dom/client";
